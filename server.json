@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.aufilm/aufilm",
+  "title": "Aufilm",
+  "description": "Production planning for film: breakdown, schedule, Day Out of Days and budget in your conversation.",
+  "version": "1.0.0",
+  "websiteUrl": "https://aufilm.app",
+  "icons": [
+    {
+      "src": "https://aufilm.app/app/static/icons/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aria-private-beta.onrender.com/mcp/claude"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "tagline": "Production planning for film, inside your conversation",
+      "documentationUrl": "https://aufilm.app/connector-docs",
+      "privacyPolicyUrl": "https://aufilm.app/connector-privacy",
+      "termsUrl": "https://aufilm.app/terms",
+      "supportEmail": "contact@aufwassen.com",
+      "authentication": "OAuth 2.1 with dynamic client registration and PKCE (S256)",
+      "chatgptRemoteUrl": "https://aria-private-beta.onrender.com/mcp/chatgpt",
+      "pricing": "Free for the first production (breakdown, schedule, Day Out of Days, editable budget); Production US$79 per production; Studio US$18/month"
+    }
+  }
+}
